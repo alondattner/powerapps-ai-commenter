@@ -16,10 +16,18 @@ See it in action:
 
 ## Installation
 
-There are two ways to install the extension:
+You can install the extension in two ways:
 
-1. **Use the packed extension:** Download the latest release from GitHub, then drag & drop the `.crx` file into your browser's extensions page.
-2. **Load unpacked source code:** Download the source code from GitHub, then use "Load unpacked" in the extensions page (requires Developer Mode enabled).
+1. **Install the packed extension (.crx):**
+   - Download the latest release zip from GitHub.
+   - Unpack the zip file.
+   - Drag and drop the `.crx` file into your browser's extensions page.
+
+2. **Load the unpacked source code:**
+   - Download the latest release zip from GitHub.
+   - Unpack the zip file.
+   - In your browser, go to `chrome://extensions` and enable Developer Mode.
+   - Click "Load unpacked" and select the `src` folder from the unpacked files.
 
 ## How to Use
 1. Right-click the extension icon > Options. Enter your OpenAI API key, endpoint, and model name. Save.
