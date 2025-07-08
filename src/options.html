@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerApps AI Comment Extension Settings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f9f9f9;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-size: 15px;
+        }
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            overflow: hidden;
+            max-width: 500px;
+            width: 100%;
+        }
+        .header {
+            color: #333;
+            padding: 20px 20px 30px 20px;
+            text-align: left;
+        }
+        .header h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1;
+        }
+        .content {
+            padding: 0 20px 20px 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #7C7C7C;
+            font-size: 15px;
+        }
+        .api-key-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ACA7A7;
+            border-radius: 5px;
+            font-size: 15px;
+            background: #fff;
+            font-family: inherit;
+            transition: border-color 0.2s ease;
+        }
+        .api-key-input:focus {
+            border-color: #742774;
+            outline: none;
+        }
+        .save-btn {
+            background: #742774;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .save-btn:hover {
+            background: #5d1e5d;
+        }
+        .save-btn:active {
+            background: #4a184a;
+        }
+        .save-btn:disabled {
+            background: #ACA7A7;
+            cursor: not-allowed;
+        }
+        .status {
+            margin-top: 14px;
+            padding: 10px 14px;
+            border-radius: 5px;
+            display: none;
+            font-weight: 500;
+            text-align: center;
+            font-size: 14px;
+        }
+        .status.success {
+            background: #e6f7e6;
+            color: #52ae32;
+            border: 1px solid #52ae32;
+        }
+        .status.error {
+            background: #fbeaec;
+            color: #B00020;
+            border: 1px solid #B00020;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 20px;
+            background: #fff;
+            color: #7C7C7C;
+            font-size: 13px;
+            border-top: 1px solid #ccc;
+        }
+        .footer a {
+            color: #742774;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Power Apps AI Commenter Settings</h1>
+        </header>
+        <section class="content">
+            <form id="settingsForm" autocomplete="off">
+                <div class="form-group">
+                    <label for="apiEndpoint">OpenAI API Endpoint</label>
+                    <input
+                        type="text"
+                        id="apiEndpoint"
+                        class="api-key-input"
+                        placeholder="https://api.openai.com/v1/chat/completions"
+                        value="https://api.openai.com/v1/chat/completions"
+                        autocomplete="off"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="modelName">OpenAI API Deployment/Model Name</label>
+                    <input
+                        type="text"
+                        id="modelName"
+                        class="api-key-input"
+                        placeholder="gpt-4.1-mini"
+                        value="gpt-4.1-mini"
+                        autocomplete="off"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="apiKey">OpenAI API Key</label>
+                    <input 
+                        type="password" 
+                        id="apiKey" 
+                        class="api-key-input" 
+                        placeholder=""
+                        autocomplete="off"
+                    >
+                </div>
+                <div style="text-align: right; margin-top: 10px;">
+                    <button type="submit" class="save-btn" id="saveBtn">Save Settings</button>
+                </div>
+            </form>
+            <div id="status" class="status"></div>
+        </section>
+        <footer class="footer">
+            Created by <a href="https://github.com/alondattner" target="_blank">Alon Dattner</a>
+        </footer>
+    </main>
+    <script src="options.js"></script>
+</body>
+</html> 
