@@ -261,10 +261,10 @@ function createCustomButton() {
   button.className = 'ms-Button ms-Button--commandBar';
   button.setAttribute('data-is-focusable', 'true');
   button.innerHTML = `
-    <span class="ms-Button-flexContainer" data-automationid="splitbuttonprimary">
-      <i class="ms-Icon ms-Button-icon" aria-hidden="true">💬</i>
-      <span class="ms-Button-textContainer">
-        <span class="ms-Button-label">Comment with AI</span>
+    <span class="ms-Button-flexContainer" data-automationid="splitbuttonprimary" style="display: flex; height: 100%; flex-wrap: nowrap; justify-content: center; align-items: center;">
+      <i class="ms-Icon ms-Button-icon" aria-hidden="true" style="font-family: FabricMDL2Icons; -webkit-font-smoothing: antialiased; font-size: 16px; margin: 0px 4px; height: 16px; line-height: 16px; text-align: center; flex-shrink: 0; color: rgb(0, 0, 0);"></i>
+      <span class="ms-Button-textContainer" style="flex-grow: 1; display: block;">
+        <span class="ms-Button-label" style="margin: 0px 4px; line-height: 100%; display: block; font-weight: normal;">Comment with AI</span>
       </span>
     </span>
   `;
@@ -280,7 +280,5 @@ setInterval(() => {
   toolbar.appendChild(createCustomButton());
   console.log('[Power Apps AI Commenter] Toolbar found - Button added.');
 }, 500);
-
-console.log('[Power Apps AI Commenter] Running in:', window.location.href);
 
 })();
