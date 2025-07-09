@@ -27,7 +27,7 @@ function injectStyle(id, css) {
 // ===== Storage Utilities =====
 async function getApiKey() {
   return new Promise((resolve) => {
-    chrome.storage.sync.get(['openaiApiKey'], function(result) {
+    chrome.storage.local.get(['openaiApiKey'], function(result) {
       resolve(result.openaiApiKey || '');
     });
   });
@@ -75,7 +75,7 @@ async function copyToClipboard(text) {
 // ===== OpenAI API Call =====
 async function addCommentsToCode(code) {
   const { openaiApiKey, apiEndpoint, modelName } = await new Promise((resolve) => {
-    chrome.storage.sync.get(['openaiApiKey', 'apiEndpoint', 'modelName'], function(result) {
+    chrome.storage.local.get(['openaiApiKey', 'apiEndpoint', 'modelName'], function(result) {
       resolve({
         openaiApiKey: result.openaiApiKey || '',
         apiEndpoint: result.apiEndpoint || 'https://api.openai.com/v1/chat/completions',
