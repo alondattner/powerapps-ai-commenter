@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "PowerApps AI Commenter",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Adds a 'Comment with AI' button to the PowerApps formula bar.",
     "permissions": [
         "activeTab",
