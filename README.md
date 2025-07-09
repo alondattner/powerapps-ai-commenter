@@ -5,8 +5,10 @@ A browser extension that helps you add AI-generated comments to your PowerApps c
 ## Features
 - AI-powered code commenting (default: GPT-4.1-mini)
 - Simple popup UI: paste code, get comments, copy result
-- Works with any OpenAI-compatible endpoint
+- Works with either the OpenAI API (direct) or Azure OpenAI API (for users who want more control over their data)
 - Fast, lightweight, and easy to configure
+
+> **Note:** You must create and provide your own OpenAI or Azure OpenAI API key. This extension does not provide an API key.
 
 ## Demo
 
