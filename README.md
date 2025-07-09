@@ -15,19 +15,10 @@ See it in action:
 ![Power Apps AI Commenter Demo](./demo.gif)
 
 ## Installation
-
-You can install the extension in two ways:
-
-1. **Install the packed extension (.crx):**
-   - Download the latest release zip from GitHub.
-   - Unpack the zip file.
-   - Drag and drop the `.crx` file into your browser's extensions page.
-
-2. **Load the unpacked source code:**
-   - Download the latest release zip from GitHub.
-   - Unpack the zip file.
-   - In your browser, go to `chrome://extensions` and enable Developer Mode.
-   - Click "Load unpacked" and select the `src` folder from the unpacked files.
+1. Download the latest zip from GitHub.
+2. Unpack the zip file.
+3. In your browser, go to `chrome://extensions` and enable Developer Mode.
+4. Click "Load unpacked" and select the `src` folder from the unpacked files.
 
 ## How to Use
 1. Right-click the extension icon > Options. Enter your OpenAI API key, endpoint, and model name. Save.
