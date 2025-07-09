@@ -10,7 +10,8 @@
     ],
     "host_permissions": [
         "https://*.powerapps.com/*",
-        "https://api.openai.com/*"
+        "https://api.openai.com/*",
+        "https://*.openai.azure.com/*"
     ],
     "icons": {
         "16": "icon16.png",
