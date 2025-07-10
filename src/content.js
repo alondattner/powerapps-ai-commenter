@@ -24,15 +24,6 @@ function injectStyle(id, css) {
   }
 }
 
-// ===== Storage Utilities =====
-async function getApiKey() {
-  return new Promise((resolve) => {
-    chrome.storage.local.get(['openaiApiKey'], function(result) {
-      resolve(result.openaiApiKey || '');
-    });
-  });
-}
-
 // ===== Popup Notification =====
 function showPopup(message, type = 'success') {
   const existingPopup = document.getElementById(POPUP_ID);

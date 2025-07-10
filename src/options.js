@@ -4,7 +4,7 @@ const $ = (id) => document.getElementById(id);
 
 // ===== Storage: Load & Save Settings =====
 const loadSettings = () => {
-  chrome.storage.sync.get(['openaiApiKey', 'apiEndpoint', 'modelName'], (result) => {
+  chrome.storage.local.get(['openaiApiKey', 'apiEndpoint', 'modelName'], (result) => {
     if (result.openaiApiKey) {
       $('apiKey').value = result.openaiApiKey;
     }
@@ -34,7 +34,7 @@ const saveSettings = () => {
     showStatus('Please enter your OpenAI API key.', 'error');
     return false;
   }
-  chrome.storage.sync.set({
+  chrome.storage.local.set({
     openaiApiKey: apiKey,
     apiEndpoint,
     modelName
