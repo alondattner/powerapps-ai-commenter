@@ -4,7 +4,6 @@
     "version": "1.0.1",
     "description": "Adds a 'Comment with AI' button to the PowerApps formula bar.",
     "permissions": [
-        "activeTab",
         "clipboardWrite",
         "storage"
     ],
