@@ -28,3 +28,7 @@ See it in action:
 3. Click the "💬 Comment with AI" button in the toolbar.
 4. Paste your code into the popup, click "Comment with AI".
 5. Copy the commented code back to your editor.
+
+## Privacy
+
+This extension does not collect or share any personal data; all settings stay in your browser. See [PRIVACYPOLICY.md](./PRIVACYPOLICY.md) for details.
