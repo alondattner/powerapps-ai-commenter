@@ -22,8 +22,6 @@ Specifically:
 ## 3. Permissions Used  
 
 The extension requests the following [Chrome Extension permissions](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/):
-
-- `activeTab`: Allows injecting UI elements into the currently open PowerApps tab.
 - `clipboardWrite`: Allows copying the AI-generated comments to your clipboard.
 - `storage`: Enables saving API configuration (key, endpoint, model) in your browser.
 

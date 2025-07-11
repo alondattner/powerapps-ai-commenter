@@ -18,7 +18,6 @@ See it in action:
 
 ## Installation
 You can now install PowerApps AI Commenter directly from the Chrome Web Store:
-
 [Install PowerApps AI Commenter](https://chromewebstore.google.com/detail/powerapps-ai-commenter/amjhhiadhlhmeobbdfjknlplodcbkjcf)
 
 - Supported browsers: **Google Chrome** and **Microsoft Edge**
