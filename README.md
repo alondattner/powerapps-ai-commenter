@@ -17,10 +17,12 @@ See it in action:
 ![Power Apps AI Commenter Demo](./demo.gif)
 
 ## Installation
-1. Download the latest zip from GitHub.
-2. Unpack the zip file.
-3. In your browser, go to `chrome://extensions` and enable Developer Mode.
-4. Click "Load unpacked" and select the `src` folder from the unpacked files.
+You can now install PowerApps AI Commenter directly from the Chrome Web Store:
+
+[Install PowerApps AI Commenter](https://chromewebstore.google.com/detail/powerapps-ai-commenter/amjhhiadhlhmeobbdfjknlplodcbkjcf)
+
+- Supported browsers: **Google Chrome** and **Microsoft Edge**
+- **Firefox is currently not supported.**
 
 ## How to Use
 1. Right-click the extension icon > Options. Enter your OpenAI API key, endpoint, and model name. Save.
